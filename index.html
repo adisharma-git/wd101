@@ -1,0 +1,42 @@
+<head>
+  <style>
+    input#name:invalid:focus {
+      border: 2px solid red;
+    }
+  </style>
+</head>
+<body>
+  <form id="user-form">
+    <label for="name">NAME</label>
+    <input required type="text" id="name" name="name" /> <br />
+
+    <label for="email">EMAIL</label>
+    <input type="email" name="email" id="email" /><br />
+
+    <label for="password">PASSWORD</label>
+    <input type="password" name="password" id="password" /><br />
+
+    <label for="dob">DATE OF BIRTH</label>
+    <input type="dob" name="dob" id="dob" /> <br />
+
+    <label for="checkbox">Accept the terms and conditions</label>
+    <input type="checkbox" name="checkbox" id="checkbox" /> <br />
+
+    <button type="submit">SUBMIT</button> <br />
+  </form>
+
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Date of Birth</th>
+        <th>Accepted terms?</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+
+  <script src="./iindex.js"></script>
+</body>
